@@ -1,0 +1,7 @@
+this is our first file creation in Linux .
+
+second line using vim editor
+
+
+Again adding changes to the files after doing a commit .
+
