@@ -3,3 +3,27 @@ Devops
 New batch
 
 Making a change after the main file was changed .
+
+# Set working directory
+WORKDIR /app
+
+# Copy JAR and startup script into the container
+COPY com.jagade-0.0.1-SNAPSHOT.jar /app/
+COPY startup.sh /app/startup.sh
+
+# Make the startup script executable
+RUN chmod +x /app/startup.sh
+
+# Expose application port (update as needed)
+EXPOSE 8081
+
+# Run the startup script
+CMD ["/bin/bash", "-c",  "/app/startup.sh"]
+
+#CMD ["java", "-jar", "com.jagade-0.0.1-SNAPSHOT.jar"]
+
+
+adflkjasdlfkjsd
+alskjdfhalsdkjfhsd
+ldkfasdlkfjsdlfkasjdfl
+
